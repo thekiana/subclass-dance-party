@@ -33,36 +33,36 @@ describe('blinkyDancer', function () {
   });
 });
 
-// describe('bellyDancer', function () {
-//   var bellyDancer, clock;
-//   var timeBetweenSteps = 100;
+describe('bellyDancer', function () {
+  var bellyDancer, clock;
+  var timeBetweenSteps = 100;
 
-//   beforeEach(function () {
-//     clock = sinon.useFakeTimers();
-//     bellyDancer = new makeBellyDancer(10, 20, timeBetweenSteps);
-//   });
+  beforeEach(function () {
+    clock = sinon.useFakeTimers();
+    bellyDancer = new makeBellyDancer(10, 20, timeBetweenSteps);
+  });
 
-//   it('should have a jQuery $node object', function () {
-//     expect(bellyDancer.$node).to.be.an.instanceof(jQuery);
-//   });
+  it('should have a jQuery $node object', function () {
+    expect(bellyDancer.$node).to.be.an.instanceof(jQuery);
+  });
 
-//   it('should have a step function that makes its node slide', function () {
-//     sinon.spy(bellyDancer.$node, 'slideToggle');
-//     bellyDancer.step();
-//     expect(bellyDancer.$node.slideToggle.called).to.be.true;
-//   });
+  it('should have a step function that makes its node slide', function () {
+    sinon.spy(bellyDancer.$node, 'toggleClass');
+    bellyDancer.step();
+    expect(bellyDancer.$node.toggleClass.called).to.be.true;
+  });
 
-//   describe('dance', function () {
-//     it('should call step at least once per second', function () {
-//       sinon.spy(bellyDancer, 'step');
-//       expect(bellyDancer.step.callCount).to.be.equal(0);
-//       clock.tick(timeBetweenSteps);
-//       clock.tick(timeBetweenSteps);
+  describe('dance', function () {
+    it('should call step at least once per second', function () {
+      sinon.spy(bellyDancer, 'step');
+      expect(bellyDancer.step.callCount).to.be.equal(0);
+      clock.tick(timeBetweenSteps);
+      clock.tick(timeBetweenSteps);
 
-//       expect(bellyDancer.step.callCount).to.be.equal(1);
+      expect(bellyDancer.step.callCount).to.be.equal(1);
 
-//       clock.tick(timeBetweenSteps);
-//       expect(bellyDancer.step.callCount).to.be.equal(2);
-//     });
-//   });
-// });
+      clock.tick(timeBetweenSteps);
+      expect(bellyDancer.step.callCount).to.be.equal(2);
+    });
+  });
+});
