@@ -3,11 +3,15 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-color:black;
   font-size: 18px;
+  background-image: url("sickdancefloor.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: white;
 }
 .title, .addDancerButton{
   padding:5px 12px;
@@ -15,13 +19,13 @@ body, a:link, a:visited, a:active{
 }
 .topbar{
   height:32px;
-  background-color: #555;
+  background-color: black;
 }
 .title{
-  background-color: #777;
+  background-color: black;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid white;
   border-radius:10px;
   position:absolute;
   display: none;
@@ -37,7 +41,7 @@ body, a:link, a:visited, a:active{
   height: 250px;
   width: 250px;
   margin: 0 auto;
-  background-color: red;
+  background-color: white;
   animation-name: stretch;
   animation-duration: 5s;
   animation-timing-function: ease-out;
