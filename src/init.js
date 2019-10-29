@@ -29,4 +29,14 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
   });
+
+  $('.addLineupButton').on('click', function(event) {
+    $(".dancer").each(function(idx, dancer) {
+      dancer.style.top = "200px";
+      var leftPx = 200;
+      leftPx += idx * 80;
+      dancer.style.left = `${leftPx}px`;
+    })
+    // $(".dancer").css("top", "200px")
+  });
 });

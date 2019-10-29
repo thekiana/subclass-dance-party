@@ -72,3 +72,8 @@ body, a:link, a:visited, a:active{
     /* background-color: yellow; */
   }
 }
+
+.title, .addLineupButton{
+  padding:5px 12px;
+  float:right;
+}
