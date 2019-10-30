@@ -37,6 +37,5 @@ $(document).ready(function() {
       leftPx += idx * 80;
       dancer.style.left = `${leftPx}px`;
     })
-    // $(".dancer").css("top", "200px")
   });
 });

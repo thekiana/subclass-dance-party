@@ -9,6 +9,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
+  overflow: hidden;
 }
 body, a:link, a:visited, a:active{
   color: white;
@@ -34,6 +35,10 @@ body, a:link, a:visited, a:active{
   background-image: url("dafffthead.png");
   background-repeat: no-repeat;
 }
+.squareDancer:hover{
+  background-image: url("daftpunch.png");
+}
+
 .title, .addSquareDancerButton{
   padding:5px 12p;
   float:right;
