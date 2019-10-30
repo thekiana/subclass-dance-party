@@ -82,3 +82,8 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
+
+.title, .punch{
+  padding:5px 12px;
+  float:right;
+}
